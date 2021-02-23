@@ -8,7 +8,9 @@
     <meta name="description" content="The coffee cup company">
           
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!--<link rel="stylesheet" type="text/css" href="./styles/main.css" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     
     <title>The coffee cup company - Produkter</title>
 
@@ -16,43 +18,127 @@
     <!-- http://www.css-validator.org/validator -->
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>The coffee cup company</h1>
-        </header>
+    <div class="container" id="my_container">
+      <header>
+        <img src="https://via.placeholder.com/75" alt="Image placeholder" class="img-fluid mr-1" />
+          <h1 class="float-right">The coffee cup company</h1>
+      </header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              Meny
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Hem</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#">Produkter<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">Om</a>
-                  </li>                
-              </ul>
-            </div>
-        </nav>
+      <div class="clearfix"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item my_hover">
+                <a class="nav-link" href="index.html" title="Hem">Hem </a>
+              </li>
+              <li class="nav-item active my_hover my_active">
+                <a class="nav-link" href="#" title="Produkter">Produkter <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item my_hover">
+                <a class="nav-link" href="about.html" title="Om">Om</a>
+              </li>
+            </ul>
+          </div>
+        </nav> 
+
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Produkter</li>
+            <ol class="breadcrumb" id="my_breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html" title="Hem">Hem</a></li>
+              <li class="breadcrumb-item active" aria-current="page" title="Produkter">Produkter</li>
             </ol>
         </nav>         
                   
         <section>
-            <h1>products.html</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h1 id="kaffeparty">Kaffeparty</h1>
+            <article>
+              <header><h3>Privatpersoner</h3></header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+
+            <article>
+              <header><h3>Företag</h3></header>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>            
         </section>
        
+        <div style="clear: both"></div>
+
+        <section>
+          <h1>Kaffemaskiner</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>          
+        </section>
+
+        <section>
+          <div class="row p-2">
+            <div class="col-md-6 my_border-2">
+              <h3>Kaffe maskin ett</h3>
+              <ul class="fa-ul">
+                <li><i class="fa fa-coffee"></i>&nbsp;Gör gott kaffe</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Finesser finns</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Gör bra</li>
+              </ul>
+
+              <p>Pris: 1000 kr</p>
+            </div>
+            <div class="col-md-6 my_border-2 pl-0">
+              <img src="https://via.placeholder.com/200" alt="Image placeholder" class="img-fluid rounded" />
+            </div>
+          </div>
+
+          <div class="row p-2">
+            <div class="col-md-6 my_border-2">
+              <h3>Kaffe maskin två</h3>
+              <ul class="fa-ul">
+                <li><i class="fa fa-coffee"></i>&nbsp;Brygger jävlig gott kaffe</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Finesser finns</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Gör bra</li>
+              </ul>
+
+              <p>Pris: 2000 kr</p>
+            </div>
+            <div class="col-md-6 my_border-2 pl-0">
+              <img src="https://via.placeholder.com/200" alt="Image placeholder" class="img-fluid rounded" />
+            </div>
+          </div> 
+          
+          
+          <div class="row p-2" >
+            <div class="col-md-6 my_border-2">
+              <h3>Kaffe maskin tre</h3>
+              <ul class="fa-ul">
+                <li><i class="fa fa-coffee"></i>&nbsp;Brygger lyxigt och gott kaffe</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Finesser finns</li>
+                <li><i class="fa fa-coffee"></i>&nbsp;Gör bra</li>
+              </ul>
+
+              <p>Pris: 3000 kr</p>
+            </div>
+            <div class="col-md-6 my_border-2 pl-0">
+              <img src="https://via.placeholder.com/200" alt="Image placeholder" class="img-fluid rounded" />
+            </div>
+          </div>           
+        </section>
+
+        <div style="clear: both"></div> 
+
         <footer>
-            <p class="text-center">&copy;Filmbolaget FS. 2021 <br/>Utvecklare Oscar Andersson</p>
+          <div class="container">
+            <p class="text-center">Copyright &copy;The coffee cup company. 2021 <br/>Webmaster Oscar Andersson</p>
+
+            <div class="text-center">
+              <div class="btn-group btn-group-lg">
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-github-alt"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-google-plus"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-twitter"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-snapchat-ghost"></i></button>
+              </div>
+            </div>
+          </div>
         </footer>          
     </div>
 

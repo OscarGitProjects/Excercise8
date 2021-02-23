@@ -1,0 +1,39 @@
+/*@media(min-width:576px){body{background-color: cyan;}}
+
+@media(min-width:768px){body{background-color: lightblue;}}
+
+@media(min-width:992px){body{background-color: lightgreen;}}
+
+@media(min-width:1200px){body{background-color: yellow;}}*/
+
+/* Färger https://simplicable.com/new/coffee-color */
+
+
+body {
+    background-color:white !important;
+    color: #362d26 !important;
+}
+
+.my_border-2 {
+    border-style: solid;
+    border-width: 2px;
+    border-color:#362d26;
+}
+
+#my_breadcrumb {
+    background-color: #eee9d3;
+    color:#362d26;
+}
+
+#my_container {
+    background-color: #eee9d3;
+    color:#362d26;
+}
+
+.my_hover a:hover{   
+    font-size: 1.1em !important;
+}
+
+.my_active {
+    font-size: 1.1em !important;
+}

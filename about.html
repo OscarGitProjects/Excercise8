@@ -8,7 +8,9 @@
     <meta name="description" content="The coffee cup company">
           
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!--<link rel="stylesheet" type="text/css" href="./styles/main.css" />-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
     
     <title>The coffee cup company - Om</title>    
 
@@ -16,44 +18,99 @@
     <!-- http://www.css-validator.org/validator -->
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>The coffee cup company</h1>
-        </header>
+    <div class="container" id="my_container">
+      <header>
+        <img src="https://via.placeholder.com/75" alt="Image placeholder" class="img-fluid mr-1" />
+        <h1 class="float-right">The coffee cup company</h1>
+      </header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                Meny
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html">Hem</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="products.html">Produkter</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Om<span class="sr-only">(current)</span></a>
-                  </li>                
-              </ul>
-            </div>
-        </nav>
+      <div class="clearfix"></div>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item my_hover">
+                <a class="nav-link" href="index.html" title="Hem">Hem </a>
+              </li>
+              <li class="nav-item my_hover">
+                <a class="nav-link" href="products.html" title="Produkter">Produkter</a>
+              </li>
+              <li class="nav-item active my_hover my_active">
+                <a class="nav-link" href="#" title="Om">Om <span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
+        </nav> 
+
         <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.html">Hem</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Om</li>
+            <ol class="breadcrumb" id="my_breadcrumb">
+              <li class="breadcrumb-item"><a href="index.html" title="Hem">Hem</a></li>
+              <li class="breadcrumb-item active" aria-current="page" title="Om">Om</li>
             </ol>
         </nav>       
                   
         <section>
-            <h1>about.html</h1>
+            <h1>Om företaget</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
+        <section>
+          <h1>Kontaktuppgifter</h1>
+          <div class="row">
+            <div class="col-2">
+              <img src="https://via.placeholder.com/75" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="col-10">
+              <div class="row">
+                <div class="12">
+                  <ul class="list-unstyled">
+                    <li>Vd. Ludwig von Anka</li>
+                    <li>070-12345678</li>
+                    <li>ludwig.anka@coffecupcompany.com</li>
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+
+            <div class="col-2">
+              <img src="https://via.placeholder.com/75" alt="Image placeholder" class="img-fluid" />
+            </div>
+            <div class="col-10">
+              <div class="row">
+                <div class="12">
+                  <ul class="list-unstyled">
+                    <li>Hr ansvarig. Kalle Anka</li>
+                    <li>070-12345678</li>
+                    <li>kalle.anka@coffecupcompany.com</li>
+                  </ul>
+                </div>              
+            </div>
+
+          </div>
+          
+        </section>
+
+        <div style="clear: both"></div>
+
         <footer>
-            <p class="text-center">&copy;Filmbolaget FS. 2021 <br/>Utvecklare Oscar Andersson</p>
-        </footer>     
+          <div class="container">
+            <p class="text-center">Copyright &copy;The coffee cup company. 2021 <br/>Webmaster Oscar Andersson</p>
+
+            <div class="text-center">
+              <div class="btn-group btn-group-lg">
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-github-alt"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-google-plus"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-twitter"></i></button>
+                <button typa="button" class="btn btn-secondary"><i class="fa fa-snapchat-ghost"></i></button>
+              </div>
+            </div>
+          </div>
+        </footer>      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
