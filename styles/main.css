@@ -6,36 +6,63 @@
 
 @media(min-width:1200px){body{background-color: yellow;}}*/
 
-/* <h1>TMP</h1>*/
-
 /* Färger https://simplicable.com/new/coffee-color */
 
 
 body {
-    background-color:white !important;
-    color: #362d26 !important;
+    background-color:white;
+    color: #704241;
+}
+
+.navbar-custom {
+    background-color: #704241;   
+}
+
+hr {
+    background-color: #704241;
+}
+
+.my_btn-custom {
+    color: #fff;
+    background-color: #704241;
+    background-color: #704241;
+}
+
+.my_anchor-tag {
+    color: black;    
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.my_anchor-tag:hover {
+    color: #704241;
+    text-decoration:underline;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+#my_container {
+    background-color: #eee9d3;
+    color: #704241;
+    padding-left: 0; 
+    padding-right: 0;
 }
 
 .my_border-2 {
     border-style: solid;
     border-width: 2px;
-    border-color:#362d26;
+    border-color: #6f4e37;
 }
 
 #my_breadcrumb {
     background-color: #eee9d3;
-    color:#362d26;
+    color: #704241;
 }
 
-#my_container {
-    background-color: #eee9d3;
-    color:#362d26;
-}
-
-.my_hover a:hover{   
-    font-size: 1.1em !important;
+.my_hover a:hover {   
+    font-size: 1.1em;
 }
 
 .my_active {
-    font-size: 1.1em !important;
+    font-size: 1.1em;
 }
